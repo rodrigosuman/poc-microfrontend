@@ -1,15 +1,17 @@
-import { Fragment, lazy } from "react";
+import { lazy } from "react";
 import styles from "./page.module.css";
 
-import SearchEngine from "search-engine/SearchEngine";
-import News from "news/News";
-import VitePage from "../components/vite-page";
+//@ts-ignore
+// import SearchEngine from "search-engine/SearchEngine";
+//@ts-ignore
+// import News from "news/News";
+const VitePage = lazy(() => import("../components/vite-page"));
 
 export default function Home() {
   return (
     <div className={styles.content}>
       <header>
-        <SearchEngine />
+        {/* <SearchEngine /> */}
       </header>
       <main>
         <h1>Home page</h1>
@@ -30,7 +32,7 @@ export default function Home() {
           </div>
 
           <aside>
-            <News />
+            {/* <News /> */}
           </aside>
         </div>
       </main>
