@@ -1,0 +1,12 @@
+.banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 3/2;
+  background-color: lightblue;
+}

@@ -1,0 +1,18 @@
+.news {
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+  width: fit-content;
+  padding: 40px;
+}
+
+.news > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.news > ul > li:not(:last-child) {
+    margin-bottom: 32px;
+}
